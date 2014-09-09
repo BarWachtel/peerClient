@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Peer Client</title>
+        <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+        <script type='text/javascript' src='peer.js'></script>
+        <style>
+            div.container {
+                display: inline-block;
+                border: 1px solid black;
+                margin: 20px;
+                width: 400px;
+                height: 200px;
+                background-color: bisque;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id='userId'></div>
+        <div class='container'>
+        <input type='text' id='nameTextField'>
+        <button id='regButton'>Register on Server</button>
+        </div>
+        
+        <div class='container'>
+            <input type='text' id='peerIdTextField'>
+            <button id='connButton'>Create Data Connection</button>
+        </div>
+        <hr>
+        <div class='container'>
+            <h3>MESSAGES RECIEVED</h3>
+            <ol id='msgOl'>           
+            </ol>
+        </div>
+        <div class='container'>
+            <input id='messageTextField'>
+            <button id='sendButton'>Send Msg</button>
+        </div>
+        <script src='peerScript.js'></script>
+        
+    </body>
+</html>
